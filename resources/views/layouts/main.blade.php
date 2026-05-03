@@ -12,10 +12,10 @@
         <div class="container mx-auto flex justify-between">
             <h1 class="text-xl font-bold">Steven.id</h1>
             <div class="space-x-4">
-                <a href="/pages/home" class="hover:text-blue-500">Home</a>
-                <a href="/pages/product" class="text-gray-700 hover:text-blue-600 transition">Product</a>
-                <a href="/pages/about" class="hover:text-blue-500 text-blue-600 font-bold">About</a>
-                <a href="/pages/contact" class="hover:text-blue-500 text-blue-600 font-bold">Contact</a>
+                <a href="/home" class="hover:text-blue-500">Home</a>
+                <a href="{{ url('/product') }}" class="text-gray-700 hover:text-blue-600 transition">Product</a>
+                <a href="/about" class="hover:text-blue-500 text-blue-600 font-bold">About</a>
+                <a href="/contact" class="hover:text-blue-500 text-blue-600 font-bold">Contact</a>
             </div>
         </div>
     </nav>
