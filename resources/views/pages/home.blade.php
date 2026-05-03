@@ -1,12 +1,13 @@
 @extends('layouts.main')
 
-@section('title', 'Home - Platform Tiket Event')
+@section('title', 'HOME')
 
 @section('content')
+    {{-- Konten halaman kamu di sini (tanpa nav & footer) --}}
 <div class="text-center py-16 px-4">
     <!-- Hero Section -->
     <h1 class="text-5xl font-extrabold text-gray-900 mb-4">
-        Selamat Datang di <span class="text-blue-600">Steven.id</span>
+        Selamat Datang di <span class="text-blue-600">Steven.tid</span>
     </h1>
     <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
         Solusi termudah untuk manajemen event dan pemesanan tiket online. 
