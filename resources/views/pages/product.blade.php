@@ -13,46 +13,29 @@
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        {{-- Card 1 --}}
-        <div class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition">
-            <img src="{{ asset('images/gambar1.png') }}" alt="Event 1" class="w-full h-60 object-cover rounded-t-lg">
-            <div class="p-5">
-                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded mb-2 inline-block">Musik</span>
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Music Fest 2026</h5>
-                <p class="text-gray-500 text-sm mb-1">📍 Batam Centre</p>
-                <p class="text-gray-500 text-sm mb-4">📅 20 Juni 2026</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-blue-600 font-bold text-lg">Rp 150.000</span>
-                    {{-- Button Interaktif --}}
-                    <button data-modal-target="modalEvent1" data-modal-toggle="modalEvent1"
-                        class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition">
-                        Beli Tiket
-                    </button>
-                </div>
-            </div>
-        </div>
+      {{-- Card 1 --}}
 
-        {{-- Card 2 --}}
-        <div class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition">
-            <img src="{{ asset('images/gambar2.png') }}" alt="Event 2" class="w-full h-60 object-cover rounded-t-lg">
-            <div class="p-5">
-                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded mb-2 inline-block">Olahraga</span>
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Fun Run Batam 2026</h5>
-                <p class="text-gray-500 text-sm mb-1">📍 Batam Centre</p>
-                <p class="text-gray-500 text-sm mb-4">📅 25 Juni 2026</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-blue-600 font-bold text-lg">Rp 100.000</span>
-                    {{-- Button Interaktif --}}
-                    <button data-modal-target="modalEvent2" data-modal-toggle="modalEvent2"
-                        class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition">
-                        Beli Tiket
-                    </button>
-                </div>
-            </div>
-        </div>
+    <x-card 
+        :image="asset('images/gambar1.png')"
+        badge="Musik"
+        title="Music Fest 2026"
+        lokasi="Batam Centre"
+        tanggal="20 Juni 2026"
+        harga="Rp 150.000"
+        modalTarget="modalEvent1"
+    />
 
-    </div>
-</div>
+    {{-- Card 2 --}}
+
+    <x-card 
+        :image="asset('images/gambar2.png')"
+        badge="Olahraga"
+        title="Fun Run Batam 2026"
+        lokasi="Batam Centre"
+        tanggal="25 Juni 2026"
+        harga="Rp 100.000"
+        modalTarget="modalEvent2"
+    />
 
 {{-- Modal Event 1 --}}
 <div id="modalEvent1" tabindex="-1" aria-hidden="true"
